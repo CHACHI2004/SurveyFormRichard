@@ -1,0 +1,99 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Proposal</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            color: rgb(201, 198, 198);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 2.5em;
+            animation: heartbeat 1.5s infinite;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .btn {
+            background: white;
+            color: #ff4d6d;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 10px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #ff4d6d;
+            color: white;
+        }
+        .polaroid-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .polaroid {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .polaroid img {
+            width: 150px;
+            height: 200px;
+            border-radius: 5px;
+        }
+        .caption {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Will You Be My Valentine? 💖</h1>
+        <h1>Aimee Jen Nepomuceno</h1>
+        <div class="polaroid-container">
+            <div class="polaroid">
+                <img src="firstdate.jpg" alt="Our Memory 1">
+                <div class="caption">Our first date 💕</div>
+            </div>
+            <div class="polaroid">
+                <img src="ries.jpg" alt="Our Memory 2">
+                <div class="caption">A special moment 🌸</div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="btn" onclick="alert('Yay! Oh wala na finish na!! pumayag ka na ah❤️')">Yes</button>
+            <button class="btn" onclick="alert('Oh no! yun lang bawi nalang next time💔')">No</button>
+        </div>
+    </div>
+</body>
+</html>
